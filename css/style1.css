@@ -1,0 +1,199 @@
+/*style1.css*/
+/*large desktop*/
+@media (max-width:1200px){
+    body {
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: rgb(69, 69, 69);
+        }
+                                }
+/*portrait tablet to landscape and desktop*/
+@media (max-width:1199px){
+    body {
+        padding-left:30px;
+        padding-right: 30px;
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+/*landscape phone to portrait tablet*/
+@media (max-width:767px){
+    body {
+        padding-left:20px;
+        padding-right:20px;
+        background-color:blue;
+    }
+}
+/*landscape phone and down*/
+@media (max-width:486px){
+    body {
+        padding-left:5px;
+        padding-right:5px;
+        background-color: red;
+    }
+}
+body {
+   
+    background-image:url(../image/bc2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0px;
+    padding:0px;
+    text-align:center;
+    }
+    
+#wrap {/*# faire appel à un id dans le html*/
+    margin:auto;
+    padding:0px;
+    width:960px;
+    }
+    
+header{
+    height:150px;
+    margin:0px;
+    padding:0px;
+    }
+
+h1{
+    color:#f6a105;
+    font-family: Verdana;
+    font-size:4em;
+    padding-top: 5%;
+ 
+    margin:0px;
+    }
+    
+nav{
+    height:80px;
+    background-color: #575757;
+       }
+       
+        nav ul {/*#nav avec ul vient faire la modification des liste a puce dans la section nav. si c etait juste ul va modifier l ensemble des liste a puce*/
+                list-style-type: none; /*pour ne pas afficher les puces*/
+                margin:0px;
+                padding-top: 1.4%;    
+                }
+                nav ul li{/*list item dans les nav*/
+                        display:inline-block;
+                        margin-left:10px;
+                        margin-right: 10px;
+                         }
+                         nav ul li a{ /* on va parametrer les hyperliens (a) qui sont dans les listes items, qui sont dans les unordered list de la navigation*/
+                                    color:white;
+                                    font-size: 1.2em;
+                                    text-decoration: none; /*enleve le souligné*/
+                                    font-family: verdana, arial, calibri;
+                                    }
+                                    nav ul li a:hover{
+                                                    color:rgb(255, 136, 0);
+                                                    }
+ .bouton{/*apparence des boutons*/
+    background-color: #4caf50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border:none;
+    border-radius: 25px;}
+
+.deroule{
+    position: relative;
+    display: inline-block;
+        }
+.deroule-contenu{/*apparence de la liste déroulante*/
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /*joue avec la superposition des éléments*/
+    text-align: left;
+    padding-left:0px;
+}
+
+.deroule-contenu li a{  /*apparence des liens dans liste*/
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+.deroule-contenu a:hover{
+    background-color: #ddd;
+    }
+.deroule:hover  .deroule-contenu{
+    display: block;
+}
+.deroule:hover .bouton{
+    background-color:#3e8e41;
+}
+
+
+main{ /* contenu avec le texte principal*/
+/*background-color: #4DDC4D;*/
+
+    padding:30px 0px 30px 0px; /*comme une marge interieure*/
+    vertical-align: top; /* les éléments a l interieure du main vont partir du haut de main*/
+    }
+        main h2 {
+            color: white;
+            font-family: "Britannic Bold","Comic Sans MS", Tahoma, Arial;
+            text-decoration: underline;
+            font-size: 2em; /*em veut emphasize, ce la agrandir la police, en fonction de l ecran des different utilisateur*/
+            margin:0px;
+        }
+        .transbox {
+            padding: 30px;
+            background-color: #ffffff;
+            
+            opacity: 0.8;
+            /*filter: alpha(opacity=60); /* For IE8 and earlier */
+       }
+        main p{/* va parametrer les paragraphe dans le main*/
+                text-align:justify; /* egaliser l'écart des paragraphe*/
+                color:#010101;
+                
+                font-family: Verdana, Tahoma, Calibri, Arial;
+                font-size: 1em;
+                margin: 20px;
+                }
+                
+        main .colonne{
+         display: inline-block;
+         width: 48%;
+       
+         
+        
+         }  
+        .fonce {
+          background-color: #fa8e01;
+          padding: 5px;
+         
+        }
+        
+        main .intro {/*appel la class intro du html*/
+            color:#BC35E7;
+            font-family: Harrington, Arial;
+            font-size: 1.2em;}
+            
+        main .film{
+                text-align: center; /*aligner le texte dans la section film*/
+                 }
+                 
+        main .film iframe{
+                    display: inline-block;
+                    width: 560px;
+                    height: 315px;
+                        }
+                        
+        main .film p{
+                    width: 40%;
+                    display: inline-block;
+                    vertical-align: top;
+                    padding-left: 30px;
+        }
+        
+        footer {
+         background-color: #76abd7;
+         
+        }
